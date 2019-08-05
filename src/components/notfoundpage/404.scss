@@ -1,0 +1,26 @@
+@import '../helpers/Vars.scss';
+
+.not-found {
+    padding-top: 50px;
+    h1 {
+        color: $mainColor;
+        font-weight: 900;
+        font-size: 100px;
+    }
+    h3 {
+        color: $mainColor;
+        font-weight: 900;
+        font-size: 55px;
+    }
+}
+
+@media ( max-width: 600px ) {
+    .not-found {
+        h1 {
+            font-size: 35px;
+        }
+        h3 {
+            font-size: 35px;
+        }
+    }
+}

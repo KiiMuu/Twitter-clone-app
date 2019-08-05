@@ -1,0 +1,52 @@
+@import '../../helpers/Vars.scss';
+
+.uk-container-small {
+    max-width: 640px;
+}
+
+.register {
+    padding-top: 50px;
+    h3 {
+        color: $mainColor;
+        font-weight: 900;
+        font-size: 55px;
+        letter-spacing: 3px;
+        margin-bottom: 35px;
+    }
+    form {
+        .uk-input {
+            background: #292828;
+            border: none;
+            height: 60px;
+            border-radius: 3px;
+            color: $mainWhite;
+        }
+        button {
+            background: $mainColor;
+            color: $mainWhite;
+            border: none;
+            border-radius: 3px;
+            &:hover, &:focus, &:active {
+                background: $mainColor;
+                color: $mainWhite;
+            }
+        }
+        a {
+            color: $mainColor;
+        }
+    }
+}
+
+@media ( max-width: 640px ) {
+    .register {
+        h3 {
+            font-size: 40px;
+        }
+    }
+}
+
+@media ( max-width: 960px ) {
+    .login-option, .register-option {
+        text-align: left !important;
+    }
+}
